@@ -5,6 +5,8 @@ $password=$_POST["password"];
 $connection1=mysqli_connect("localhost","root","toor","dcb");
 $query1="INSERT INTO dcb.admin(name,employee,password) VALUES ('$name','$employee','$password')";
 $result1=mysqli_query($connection1,$query1);
+
+
 if($result1)
 {
 	echo "Successful";
